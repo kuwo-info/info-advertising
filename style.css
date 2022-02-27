@@ -17,7 +17,8 @@
 }
 
 /* ページタイトルのスタイル */
-h1,h2 {
+h1,
+h2 {
     background-color: white;
     margin: 0;
     margin-top: 30px;
@@ -25,36 +26,29 @@ h1,h2 {
 }
 
 body {
-    margin: 0; 
-}
-    main {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-.question {
-    border: 1px solid black;
-    margin: 20px auto;
-    padding: 3px 3px 10px 20px;
-    width: 80%;
-    box-sizing: border-box;
+    margin: 0;
 }
 
-    @media screen and (max-width: 700px) {
-        body {
-            width: 100%;
-        }
-    }
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-.limit{
-  color:red;
-  font-size: 1.1rem;
-  text-align: center;
+@media screen and (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+}
+
+.limit {
+    color: red;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 /* ここから下がボタンのCSS　*/
-.container{
+.container {
     text-align: center;
 }
 .c-button {
@@ -63,7 +57,7 @@ body {
     width: inherit;
     min-width: 240px;
     text-align: center;
-    background-color: #FFF;
+    background-color: #fff;
     color: black;
     border-bottom: 1px solid black;
     text-decoration: none;
@@ -75,12 +69,12 @@ body {
     font-size: 18px;
     letter-spacing: 0.05em;
     opacity: 1 !important;
-  }
-  .c-button span {
+}
+.c-button span {
     position: relative;
     z-index: 99;
-  }
-  .c-button:after {
+}
+.c-button:after {
     content: "";
     display: block;
     position: absolute;
@@ -90,8 +84,8 @@ body {
     height: 100%;
     background-color: black;
     transition: all 0.3s;
-  }
-  .c-button svg {
+}
+.c-button svg {
     width: 45px;
     position: absolute;
     right: 24px;
@@ -99,25 +93,26 @@ body {
     transform: translateY(-50%);
     z-index: 99;
     transition: all 0.2s;
-  }
-  .c-button:hover {
-    color: #FFF;
-  }
-  .c-button:hover:after {
+}
+.c-button:hover {
+    color: #fff;
+}
+.c-button:hover:after {
     width: 100%;
-  }
-  .c-button:hover svg path {
-    stroke: #FFF;
+}
+.c-button:hover svg path {
+    stroke: #fff;
     transition: all 0.1s 0.2s;
-  }
+}
+/* ここまで */
 
-  footer{
+footer {
     text-align: center;
     margin-top: 6vh;
     font-size: 0.8rem;
-  }
-  @media(min-width:680px){
-    .sp{
-      display:none;
+}
+@media (min-width: 680px) {
+    .sp {
+        display: none;
     }
-  }
+}
